@@ -1,0 +1,193 @@
+{% extends 'component/layout.html' %}
+{% import 'component/component.html' as cmm %}
+{% block title %} 业务范围 {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="less/_operation.less">
+{% endblock %}
+{% block body %}
+<section id="banner">
+    <div id="main-slider" class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/operation_01.jpg" alt=""/>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- end slide-->
+<section id="" class="vb-nav">
+    <div class="service_b">
+        <div class="container nav">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h2>业务范围</h2>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <i>首页 > 业务范围 > 体系认证 > ISO90001认证</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="content" class="no-padd about_bg">
+    <div class="service_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="left col-md-3">
+                            <ul class="clearfix sidebar">
+                                <li>
+                                    <div>国内产品认证<i class="iconfont">&#xe603;</i></div>
+                                    <ol style="display: block;" id="0">
+                                        <a href="#content">
+                                            <li class="cur">- CCC认证 <span></span></li>
+                                        </a><a href="/Cn/service/id/71">
+                                        <li class="">- CQC认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/84">
+                                        <li class="">- 十环认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/85">
+                                        <li class="">- CCEP认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/86">
+                                        <li class="">- 进网许可证 <span></span></li>
+                                    </a><a href="/Cn/service/id/87">
+                                        <li class="">- 型号核准证 <span></span></li>
+                                    </a></ol>
+                                </li>
+                                <li>
+                                    <div>国际产品认证<i class="iconfont">&#xe603;</i></div>
+                                    <ol id="1">
+                                        <a href="/Cn/service/id/72">
+                                            <li class="">- CE认证 <span></span></li>
+                                        </a><a href="/Cn/service/id/73">
+                                        <li class="">- ROHS认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/79">
+                                        <li class="">- CB认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/83">
+                                        <li class="">- FCC认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/88">
+                                        <li class="">- CPC认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/89">
+                                        <li class="">- PSE认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/90">
+                                        <li class="">- KC认证 <span></span></li>
+                                    </a></ol>
+                                </li>
+                                <li>
+                                    <div>体系认证<i class="iconfont">&#xe603;</i></div>
+                                    <ol id="2">
+                                        <a href="/Cn/service/id/74">
+                                            <li class="">- ISO90001认证 <span></span></li>
+                                        </a><a href="/Cn/service/id/91">
+                                        <li class="">- ISO14001认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/92">
+                                        <li class="">- OHSAS18001认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/93">
+                                        <li class="">- ISO20000认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/94">
+                                        <li class="">- ISO22000认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/95">
+                                        <li class="">- ISO27001认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/96">
+                                        <li class="">- IATF16949认证 <span></span></li>
+                                    </a><a href="/Cn/service/id/97">
+                                        <li class="">- 售后服务管理体系认证 <span></span></li>
+                                    </a></ol>
+                                </li>
+                                <li>
+                                    <div>资质办理<i class="iconfont">&#xe603;</i></div>
+                                    <ol id="3">
+                                        <a href="/Cn/service/id/75">
+                                            <li class="">- 涉密资质办理 <span></span></li>
+                                        </a><a href="/Cn/service/id/98">
+                                        <li class="">- 工业生产许可证办理 <span></span></li>
+                                    </a><a href="/Cn/service/id/99">
+                                        <li class="">- 防爆合格证 <span></span></li>
+                                    </a></ol>
+                                </li>
+                                <li>
+                                    <div>荣誉评定<i class="iconfont">&#xe603;</i></div>
+                                    <ol id="4">
+                                        <a href="/Cn/service/id/76">
+                                            <li class="">- 企业信用等级评定（AAA） <span></span></li>
+                                        </a><a href="/Cn/service/id/100">
+                                        <li class="">- 国家高新技术企业 <span></span></li>
+                                    </a></ol>
+                                </li>
+                                <li>
+                                    <div>知识产权<i class="iconfont">&#xe603;</i></div>
+                                    <ol id="5">
+                                        <a href="/Cn/service/id/77">
+                                            <li class="">- 商标注册 <span></span></li>
+                                        </a><a href="/Cn/service/id/101">
+                                        <li class="">- 专利申请 <span></span></li>
+                                    </a></ol>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right col-md-9">
+                            <ul>
+                                <a class="col-xs-6 col-md-4" href="/Cn/servicedetail/sid/1667">
+                                    <li><img src="images/operation_02.jpg">
+                                        <p>CCC认证</p></li>
+                                </a>
+                                <a class="col-xs-6 col-md-4" href="/Cn/servicedetail/sid/1668">
+                                <li>
+                                    <img src="images/operation_02.jpg">
+                                    <p>CQC认证</p>
+                                </li>
+                            </a>
+                            <a class="col-xs-6 col-md-4" href="/Cn/servicedetail/sid/1669">
+                                <li><img src="images/operation_02.jpg">
+                                    <p>环保认证</p></li>
+                            </a>
+                            <a class="col-xs-6 col-md-4" href="/Cn/servicedetail/sid/1670">
+                                <li><img src="images/operation_02.jpg">
+                                    <p>十环认证</p></li>
+                            </a>
+                            <a class="col-xs-6 col-md-4" href="/Cn/servicedetail/sid/1671">
+                                <li><img src="images/operation_02.jpg">
+                                    <p>型号核准</p></li>
+                            </a>
+                            <a class="col-xs-6 col-md-4" href="/Cn/servicedetail/sid/1672">
+                                <li><img src="images/operation_02.jpg">
+                                    <p>入网许可证</p></li>
+                            </a>
+                        </ul>
+                        </div>
+                        <div class="text-center">
+                            <ul class="pagination page">
+                                <li><a href="#">上一页</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">....</a></li>
+                                <li><a href="#">41</a></li>
+                                <li><a href="#">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+   $('.sidebar>li>div').each(function () {
+     $(this).click(function () {
+       //if($(this).next().css('display') !== 'block'){
+         $('.sidebar>li>ol').hide();
+         console.log($('.sidebar>li>ol'));
+         $(this).parent().find('ol').slideToggle();
+       
+     });
+   })
+
+</script>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

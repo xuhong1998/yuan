@@ -1,0 +1,90 @@
+{% extends 'component/layout.html' %} 
+{% import 'component/component.html' as cmm %} 
+{% block title %} 业务范围 {% endblock %} 
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="less/_resource.less">
+{% endblock %} 
+{% block body %}
+<section id="banner">
+            <div id="main-slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="images/resource_01.jpg" alt="" />
+                  </li>
+                </ul>
+            </div>
+        </section>
+        <!-- end slide-->
+        <section class="navigation">
+            <div class="navigation-list clearfix">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">机构展示</a></li>
+                    <li><a href="#">供应资源</a></li>
+                    <li><a href="#">需求信息</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--content-->
+        <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9">
+                        <h3 class="content-title">优质资源</h3>
+                        <div class="content-main">
+                            {% for item in [,,,,,,] %}
+                            <div class="content-essay row">
+                                <div class="col-xs-12 col-md-9 content-list">
+                                    <div class="content-top row">
+                                        <h4 class="col-sm-6 col-md-6">
+                                            某某信息技术科技有限公司
+                                        </h4>
+                                        <span class="col-sm-6 col-md-6">
+                                        2018-09-24
+                                    </span>
+                                    </div>
+                                    <P><span>公司简介：</span>斯卡伊是一家综合性设施管理服务公司，专业的管理团队，丰富的管理经验，灵活的服务方式能为您提...</P>
+                                    <p><span>供应产品/服务：</span>提供产品的认证咨询，商标注册服务<p>
+                                    <p><span>联系信息：</span> 肖泽鹏     联系电话：13376094321</p>
+                                </div>
+                                <div class="col-xs-12 col-md-3 content-a">
+                                    <a href="">查看详细</a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                                
+                        </div>
+                        <div class="text-center">
+                            <ul class="pagination page">
+                                <li><a href="#">上一页</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">....</a></li>
+                                <li><a href="#">41</a></li>
+                                <li><a href="#">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-3 message">
+                        <h4>发布你能提供资源</h4>
+                        <div class="input">
+                            <input type="text" class="form-control" id="name" placeholder="公司名称">
+                            <input type="text" class="form-control" id="name" placeholder="联系姓名">
+                            <input type="text" class="form-control" id="name" placeholder="联系电话">
+                            <input type="text" class="form-control" id="name" placeholder="联系地址">
+                            <input type="text" class="form-control big" id="name" placeholder="公司简介">
+                            <input type="text" class="form-control big" id="name" placeholder="产品与服务">
+                            <button type="button" class="btn btn-default">提交申请</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end content-->
+{% endblock %}
+{% block script %}
+
+{% endblock %}

@@ -1,0 +1,115 @@
+/* function */
+.clearfix:after,.list-group li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.clearfix,.list-group li{zoom:1;}
+.ib{display:inline-block;*display:inline;*zoom:1;}
+.dn{display:none;}
+.db{display:block;}
+.fl{float:left;}
+.fr{float:right;}
+.pr{position:relative;}
+.prz{position:relative;zoom:1;}
+.oh{overflow:hidden;}
+.ff0{font-family:arial,\5b8b\4f53;}
+.ff1{font-family:~'"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53';}
+.fs1{font-size:12px;}
+.fs2{font-size:14px;}
+.fwn{font-weight:normal;}
+.fwb{font-weight:bold;}
+.tal{text-align:left;}
+.tac{text-align:center;}
+.tar{text-align:right;}
+.taj{text-align:justify;text-justify:inter-ideograph;}
+.vam,.f-vama *{vertical-align:middle;}
+.wsn{word-wrap:normal;white-space:nowrap;}
+.pre{overflow:hidden;text-align:left;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;}
+.wwb{white-space:normal;word-wrap:break-word;word-break:break-all;}
+.ti{overflow:hidden;text-indent:-30000px;}
+.ti2{text-indent:2em;}
+.lhn{line-height:normal;}
+.tdu,.f-tdu:hover{text-decoration:underline;}
+.tdn,.f-tdn:hover{text-decoration:none;}
+.toe{overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;}
+.csp{cursor:pointer;}
+.csd{cursor:default;}
+.csh{cursor:help;}
+.csm{cursor:move;}
+.usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+/* 栅格布局 */
+// .row{margin-left: -15px;margin-right: -15px;
+//     box-sizing: border-box;
+//     .clearfix();
+// }
+// .generate-columns(12);
+// .generate-columns(@n, @i: 1) when (@i =< @n) {
+//   .span@{i} {
+//     width: (@i * 100% / @n);
+
+//   }
+//   .generate-columns(@n, (@i + 1));
+// }
+// [class*=span]{
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     float: left;
+//     box-sizing: border-box;
+// }
+/* 字号简写 */
+.loop(100); // 调用循环
+.loop(@counter) when (@counter > 0) {
+  .loop((@counter - 10));    // 递归调用自身
+  .fz@{counter} {
+    font-size: (@counter * 1px);
+  }
+}
+/* 边距简写 */
+.loop2(100); // 调用循环
+.loop2(@counter) when (@counter >= 0) {
+  .loop2((@counter - 10));    // 递归调用自身
+  // width: (10px * @counter); // 每次调用时产生的样式代码
+  .mt@{counter} {margin-top: (@counter * 1px); }
+  .mb@{counter} {margin-bottom: (@counter * 1px); }
+  .ml@{counter} {margin-left: (@counter * 1px); }
+  .mr@{counter} {margin-right: (@counter * 1px); }
+  .pt@{counter} {padding-top: (@counter * 1px); }
+  .pb@{counter} {padding-bottom: (@counter * 1px); }
+  .pl@{counter} {padding-left: (@counter * 1px); }
+  .pr@{counter} {padding-right: (@counter * 1px); }
+  .pd@{counter} {padding: (@counter * 1px); }
+}
+body{font-family: "Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif; }
+body{
+  margin: 0;
+  color: #353535;
+  font-size:14px;
+}
+@media (min-width: 768px) {
+  .container{
+  	width: 1180+20px;
+  	padding-right: 10px;
+  	padding-left: 10px;
+  }
+  
+}
+
+/* link */
+a { 
+  color: #232323;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #FF7900;
+    text-decoration: none;
+  }
+}
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+

@@ -1,0 +1,80 @@
+{% extends 'component/layout.html' %} 
+{% import 'component/component.html' as cmm %} 
+{% block title %} 合作资源 {% endblock %} 
+{% block style %}
+  <link rel="stylesheet" type="text/css" href="less/_detail.less">
+{% endblock %} 
+{% block body %}
+<section id="banner">
+    <div id="main-slider" class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/resource_01.jpg" alt="" />
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- end slide-->
+<section class="navigation">
+    <div class="navigation-list">
+        <ul class="nav navbar-nav">
+            <li>机构展示</li>
+            <li>供应资源</li>
+            <li>需求信息</li>
+        </ul>
+    </div>
+</section>
+<!--content-->
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-9 detail">
+                <p class="navigate">首页 > 资源合作 > 供应资源 > 山东某旅游城市酒店项目</p>
+                <div class="content-top">
+                    <h4 class="col-sm-6 col-md-6">
+                        某某信息技术科技有限公司
+                    </h4>
+                    <i class="col-sm-6 col-md-6">
+                        2018-09-24    浏览者：197人
+                    </i>
+                </div>
+                <div class="main">
+                    <h3>公司简介：</h3>
+                    <p>公司成立于2009年，旨在向客户体用更优秀的照明系统解决方案，以最适宜的光环境为载体披上华丽的晚装。</p>
+                    <p>我们创造的不仅仅是夜晚的美，同时也在树立人们对生活的态度。从钻木取火的生存本能，到多彩华丽的绽放之夜，</p>
+                    <p>这一切都是光的进步。而我们要做的，就是让生活更美好！我们的涵盖从建筑、景观照明设计到室内灯光环境的塑造，</p>
+                    <p>从古村镇灯光规划到各功能场馆照明设计。这一切，我们都拥有丰富的经验。从国家体育场鸟巢到沈阳全运村、</p>
+                    <p>从天津天碱观山苑到绿城北京诚园、从TBD云集中心到中国移动研发中心，从青岛惠普展示中心到海口玉龙泉……，这都有我们的足迹！</p>
+                    <p>我们不但拥有专业的照明设计团队，我们更拥有优秀的灯光节策划和主题乐园灯光策划包装团队。打造中国最强的夜晚娱乐嘉年华是我的目标。</p>
+                    <p>城市灯光节布展与策划；主题乐园音乐灯光喷泉烟火秀；商业区灯光节策划与展陈，我们做的仅仅是设计，策划展陈我们同样优秀。</p>
+                    <p>我们拥有专业的创意设计团队，为客户提供最适合的策划包装服务。用精心打造精品，用精品回馈客户。</p>
+                    <h3>供应产品/服务：</h3>
+                    <p>照明设计     灯光节策划       主题乐园灯光策划       照明工程顾问       商业展陈</p>
+                    <h3>联系信息：</h3>
+                    <p>联系人：肖泽鹏      联系电话：13376733333       联系地址：南京是秦淮区建业路98号</p>
+                    <a>返回列表 >> </a>
+                </div>
+                <div class="href">
+                    <p>上一篇：</p><a>标题标题标题标题标题标题标题标题标题</a><br>
+                    <p>下一篇：</p></p><a>标题标题标题标题标题标题</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 message">
+                <h4>发布你能提供资源</h4>
+                <div class="input">
+                    <input type="text" class="form-control" id="name" placeholder="公司名称">
+                    <input type="text" class="form-control" id="name" placeholder="联系姓名">
+                    <input type="text" class="form-control" id="name" placeholder="联系电话">
+                    <input type="text" class="form-control" id="name" placeholder="联系地址">
+                    <input type="text" class="form-control big" id="name" placeholder="公司简介">
+                    <input type="text" class="form-control big" id="name" placeholder="产品与服务">
+                    <button type="button" class="btn btn-default">提交申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block script %}
+
+{% endblock %}

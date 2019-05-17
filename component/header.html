@@ -1,0 +1,38 @@
+<div class="header">
+    <nav class="navbar navbar-default  navbar-white" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg"></a>
+            </div>
+            
+                <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="tool-bar">
+                    <li class="navbar-tel">186-1698-9675</li>
+                    <li>加入我们</li>
+                    <li>联系我们</li>
+                </ul>
+                    {% set nav = {
+                        "首页": "index.html",
+                        "关于我们": "about.html",
+                        "业务范围": "copeBusiness.html",
+                        "新闻资讯": "news.html",
+                        "合作资源": "cooperation.html",
+                        "我的认证": "#relation.html",
+                        "联系我们": "contact.html",
+                    } %}
+                    <ul class="nav navbar-nav">
+                        {% for item,v in nav -%}
+                        <li><a {% if loop.first %}class="active"{% endif %} href="{{v}}">{{item}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div>
+    </nav>
+</div>

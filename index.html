@@ -1,0 +1,289 @@
+{% extends 'component/layout.html' %} {% import 'component/component.html' as cmm %} {% block title %} 首页 {% endblock %} {% block style %}
+<style type="text/css">
+    .swiper-container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #FFF
+    }
+    
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+</style>
+{% endblock %} {% block body %}
+<section class="swiper">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="img-responsive" src="images/index_10.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="img-responsive" src="images/index_10.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="img-responsive" src="images/index_10.jpg">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要滚动条 -->
+    </div>
+</section>
+<!-- ABOUT SECTION START -->
+<section id="about" class="section-padding about-us">
+    <div class="container">
+        <div class="row">
+            <!-- SECTION HEADER -->
+            <div class="fn-section-header">
+                <h2 class="section-title text-center">
+                    关于我们
+                    <i></i>
+                </h2>
+                <p>
+                    杭州元泰质量认证咨询有限公司，是一家集中解决企业管理、产品认证、质量检测、知识产权等问题的专业咨询机构，目前下辖公司遍布江浙沪皖省会或中心城市，包括上海、杭州、南京、苏州等。公司主要开展产品质量认证、体系认证、产品检测、国际认证检测等认证检测类业务；是由工商局、质量技术监督局、认证认可监督管理委员会认可批准成立的一家专业认证检测咨询服务公司。
+                </p>
+            </div>
+            <!-- / END SECTION HEADER -->
+            <div class="about-images">
+                <!-- ABOUT CLIENT 1 -->
+                <div class="wow flipInX animated col-sm-6 col-md-6 text-center">
+                    <img src="images/index_1.jpg" class="img-responsive" alt="Cinque Terre">
+                </div>
+                <div class="wow flipInX animated col-sm-6 col-md-6 text-center">
+                    <img src="images/index_2.jpg" class="img-responsive" alt="Cinque Terre">
+                </div>
+                <!-- ABOUT CLIENT 2 -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END ABOUT SECTION -->
+<!-- account SECTION START -->
+<section id="account" class="section-padding account-us">
+    <div class="container">
+        <div class="row">
+            <!-- SECTION HEADER -->
+            <div class="fn-section-header">
+                <h2 class="section-title text-center">
+                    业务范围
+                    <i></i>
+                </h2>
+                <p>
+                    专业从事各类管理体系认证咨询、产品认证咨询、提升客户可持续发展能力为己任
+                </p>
+            </div>
+            <!-- / END SECTION HEADER -->
+            <div class="account-nav">
+                <div class="wow flipInX animated col-lg-2dot4 text-account">
+                    <span class="chart-01 chart"></span>
+                    <h3>国内产品认证</h3>
+                    <p>3C认证</p>
+                    <p>CQC认证</p>
+                    <p>节能认证</p>
+                    <p>环保认证</p>
+                    <p>入网许可证</p>
+                    <p>型号核准</p>
+                </div>
+                <div class="wow flipInX animated col-lg-2dot4 text-account">
+                    <span class="chart-02 chart"></span>
+                    <h3>国际产品认证</h3>
+                    <p>CE认证</p>
+                    <p>ROHS认证</p>
+                    <p>UL认证</p>
+                    <p>FCC认证</p>
+                    <p>SGS证认</p>
+                </div>
+                <div class="wow flipInX animated col-lg-2dot4 text-account">
+                    <span class="chart-03 chart"></span>
+                    <h3>体系认证</h3>
+                    <p>ISO9001认证</p>
+                    <p>ISO14001认证</p>
+                    <p>ISO18001认证</p>
+                    <p>ISO20000认证</p>
+                    <p>ISO27000认证</p>
+                    <p>ISO22000认证</p>
+                </div>
+                <div class="wow flipInX animated col-lg-2dot4 text-account">
+                    <span class="chart-04 chart"></span>
+                    <h3>知识产权</h3>
+                    <p>商标服务</p>
+                    <p>专利服务</p>
+                    <p>版权服务</p>
+                    <p>资质认证</p>
+                    <p>产权认证</p>
+                </div>
+                <div class="wow flipInX animated col-lg-2dot4 text-account">
+                    <span class="chart-05 chart"></span>
+                    <h3>委托测试</h3>
+                    <p>电子产品</p>
+                    <p>玩具用品</p>
+                    <p>家用电器</p>
+                    <p>家纺用品</p>
+                    <p>服务用品</p>
+                    <p>日用品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END account SECTION -->
+<!-- teamwork SECTION START -->
+<section id="teamwork" class="section-padding teamwork-us ">
+    <div class="container">
+        <div class="row">
+            <!-- SECTION HEADER -->
+            <div class="fn-section-header colour-h">
+                <h2 class="section-title text-center">
+                    资源合作
+                    <i></i>
+                </h2>
+                <p>
+                    专业从事各类管理体系认证咨询、产品认证咨询、提升客户可持续发展能力为己任
+                </p>
+            </div>
+            <!-- / END SECTION HEADER -->
+            <div class="teamwork-images">
+                <div class="row">
+                    <div class="wow flipInX animated col-sm-4 col-md-4 text-teamwork">
+                        <img src="images/index_03.jpg" class="img-responsive" alt="Cinque Terre">
+                    </div>
+                    <div class="wow flipInX animated col-sm-4 col-md-4 text-teamwork">
+                        <img src="images/index_04.jpg" class="img-responsive" alt="Cinque Terre">
+                    </div>
+                    <div class="wow flipInX animated col-sm-4 col-md-4 text-teamwork">
+                        <img src="images/index_05.jpg" class="img-responsive" alt="Cinque Terre">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END teamwork SECTION -->
+<!-- message  SECTION START -->
+<section id="message " class="section-padding message -us">
+    <div class="container">
+        <div class="row">
+            <!-- SECTION HEADER -->
+            <div class="fn-section-header">
+                <h2 class="section-title text-center">
+                    元泰资讯
+                    <i></i>
+                </h2>
+                <p>
+                    每一个客户的认可都是对元泰管理咨询的鼓励
+                </p>
+            </div>
+            <!-- / END SECTION HEADER -->
+            <div class="message-images clearfix">
+                <div class="wow flipInX animated col-sm-6 col-md-6 text-teamwork">
+                    <img src="images/index_07.jpg" class="img-responsive" alt="Cinque Terre">
+                    <h4>欧盟发布新的能效标签框架指令 (EU) 2017/1369取代2010/30/EU</h4>
+                    <p>2017年7月28日，欧盟发布新的能效标签框架指令 (EU) 2017/1369，取代原来的能效标签...</p>
+                </div>
+                <div class="wow flipInX animated col-sm-6 col-md-6 text-teamwork">
+                    <div class="message-text clearfix">
+                        <div class="row">
+                            <div class="message-right col-sm-2 col-md-2">
+                                <p>22</p>
+                                <p>2019-01</p>
+                            </div>
+                            <div class="message-left col-sm-10 col-md-10">
+                                <h4>企业管理的要务就是从“饼”到“头”</h4>
+                                <p>作为职业经理人，如何将自己的职业愿景与目标尽快变为现实？如何将管理思想和管理理念变成企业的生....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-text clearfix">
+                        <div class="row">
+                            <div class="message-right col-sm-2 col-md-2">
+                                <p>21</p>
+                                <p>2019-01</p>
+                            </div>
+                            <div class="message-left col-sm-10 col-md-10">
+                                <h4>从传统商务合作到新型生态关系--北京城建集体举行优秀合作</h4>
+                                <p>随着经济与社会的发展，围绕以客户为中心，开展战略合作、构建良好商业生态意识，逐步获得各界重....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-text clearfix">
+                        <div class="row">
+                            <div class="message-right col-sm-2 col-md-2">
+                                <p>20</p>
+                                <p>2019-01</p>
+                            </div>
+                            <div class="message-left col-sm-10 col-md-10">
+                                <h4>华帝流程变革，KM智慧人才战略重磅发布</h4>
+                                <p>2018年以来，国内外经济形势更趋复杂，以厨电为代表的消费终端行业竞争尤其激烈。面对不断变....</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  -->
+{% endblock %} {% block script %}
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script> -->
+<!-- <script>
+  let swiper = new Swiper('.swiper-container',{
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script> -->
+
+<script type="text/javascript" src="node_modules/swiper/dist/js/swiper.min.js"></script> -->
+<script>
+    $(document).ready(function() {
+        var mySwiper = new Swiper('.swiper-container', {
+            // direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+            // 如果需要滚动条
+
+        })
+    })
+
+
+    // var swiper = new Swiper('.swiper-container2', {
+    //       slidesPerView: 4,
+    //       spaceBetween: 30,
+    //       loop: true, // 循环模式选项
+    //       pagination: {
+    //         el: '.swiper-pagination',
+    //         clickable: true,
+    //       },
+    //       // 如果需要前进后退按钮
+    //       navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
+    //       },
+    //       breakpoints: { 
+    //                 768: {
+    //                     slidesPerView: 1,
+    //                  },
+    //                 1200: {
+    //                     slidesPerView: 2,
+    //                  }
+    //             }
+
+    //     });
+</script>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'component/layout.html' %}
+{% import 'component/component.html' as cmm %}
+{% block title %} 合作资源 {% endblock %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="less/_news.less">
+{% endblock %}
+{% block body %}
+<section id="banner">
+    <div id="main-slider" class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/news_01.jpg" alt="" />
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- end slide-->
+<section class="navigation">
+    <div class="navigation-list clearfix">
+        <ul class="nav navbar-nav">
+            <li><a href="#">公司动态</a></li>
+            <li><a href="#">行业动态</a></li>
+            <li><a href="#">公司活动</a></li>
+        </ul>
+    </div>
+</section>
+<!--content-->
+<section class="news-main">
+    <div class="container">
+        {% for item in [,,,,,,] %}
+        <div class="article row">
+            <a href="#">
+                <div class="col-xs-12 col-md-3 images">
+                    <img src="images/news_02.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-0 col-md-1 time">
+                    <h3>12-26</h3>
+                    <p>2018</p>
+                </div>
+                <div class="col-xs-12 col-md-6 title">
+                    <h2>看了这个故事，你还敢在孩子面前玩手机吗</h2>
+                    <p>忙碌了一天，下班刚回到家，就接到了女儿的班主任文老师打来的投诉电话：“思思很不像话，上课让她起来回答问题，她就当没听见。问她原因，她也爱理不理的...</p>
+                </div>
+                <div class="col-xs-0 col-md-2 advance">
+                    <span>></span>
+        </div>
+        </a>
+                </div>
+                {% endfor %}
+    <div class="text-center">
+        <ul class="pagination page">
+            <li><a href="#">上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">....</a></li>
+            <li><a href="#">41</a></li>
+            <li><a href="#">下一页</a></li>
+        </ul>
+    </div>
+    </div>
+</section>
+{% endblock %}
+{% block script %}
+{% endblock %}

@@ -1,0 +1,61 @@
+{% macro slides(img) %}
+    <div class="focus">
+        <div class="hd-wrap">
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="bd">
+            <ul>
+                {% for item in img -%}
+                 <li style="background: url(images/{{item}}) center 0 no-repeat;background-size: cover;"></li>   
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endmacro %}
+
+<!-- cmm.focus-page("images/focus.jpg") -->
+{% macro focusPage(tit,sub) %}
+<div class="focus-page" style="background: url(images/product-focus.jpg) center 0 no-repeat;-webkit-background-size: cover;
+background-size: cover;">
+    <div class="container">
+        <div class="tit">{{tit}}<small class="subtit">{{sub}}</small></div>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro page() %}
+<div class="text-center ">
+    <ul class="page">
+        <li><a href="#">上一页</a></li>
+        <li><a class="active" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">下一页</a></li>
+    </ul>
+</div>
+{% endmacro %}
+
+{% macro subMenu(tit,sub) %}
+<div class="subMenu">
+    <div class="w1200">
+        <h4 class="title">{{tit}}</h4>
+        <div class="pull-right subMenu-item">
+            {% for item in sub %}
+            {% if loop.index > 1 %} | {% endif %}<a href="#">{{item}}</a> 
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro sidebarNav(nav) %}
+<ul class="sidebar-nav">
+    {% for item in nav %}
+    <li {% if loop.first %} class="active" {% endif %}><a href="#">{{item}}</a></li>
+    {% endfor %}
+</ul>
+{% endmacro %}
